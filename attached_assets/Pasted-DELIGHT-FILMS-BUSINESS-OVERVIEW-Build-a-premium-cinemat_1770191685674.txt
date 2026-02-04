@@ -1,0 +1,295 @@
+DELIGHT FILMS
+BUSINESS OVERVIEW
+Build a premium, cinematic, and visually striking website for DeLight Films, a professional film production and visual storytelling company operating in South Africa.
+
+Business Name: DeLight Films
+Domain to Register: delightfilms.co.za
+Email (to create): info@delightfilms.co.za
+
+Industry:
+
+Film Production
+
+Cinematography
+
+Motion Graphics
+
+Contact Numbers:
+
+068 067 7789
+
+066 152 7576
+
+Office Address: Do not display (to be added later)
+
+CORE BRAND POSITIONING
+DeLight Films must be positioned as:
+
+A serious, professional production house
+
+A cinematic storytelling brand
+
+A high-quality visual partner for films, brands, and artists
+
+A company that competes visually with top-tier production studios
+
+This is not a basic videography site.
+It must feel film-industry grade, creative, and polished.
+
+TARGET AUDIENCE
+Film & TV producers
+
+Brands & advertising agencies
+
+Musicians & record labels
+
+Content creators
+
+Corporate marketing teams
+
+DESIGN & UI/UX DIRECTION (HIGH-END)
+Visual Style
+Cinematic
+
+Dark, moody, modern
+
+Film-inspired layouts
+
+Large visuals, minimal text
+
+Smooth transitions
+
+Mood
+🎥 Sunset film vibe
+Warm highlights, dark backgrounds, dramatic contrast.
+
+COLOUR PALETTE
+Primary: Dark charcoal / near-black
+
+Accent: Dark orange (sunset tone)
+
+Secondary: Soft warm greys
+
+Text: White / off-white
+
+Dark orange must be used sparingly for emphasis, not flooding.
+
+TYPOGRAPHY
+Headings: Modern sans-serif (cinematic feel)
+
+Body: Clean, readable sans-serif
+
+Strong hierarchy, generous spacing
+
+WEBSITE STRUCTURE (SITEMAP)
+/
+├── Home
+├── About
+├── Services
+│   ├── Film & Series
+│   ├── Commercials
+│   ├── Music Videos
+│   ├── Motion Graphics
+├── Portfolio
+│   ├── Video Gallery
+│   ├── Photo Gallery
+├── Contact
+├── Privacy Policy
+└── Terms of Use
+
+PAGE SPECIFICATIONS
+1. HOME
+Purpose: Immediate visual impact + positioning.
+
+Hero:
+
+Full-width cinematic video or image
+
+Headline example:
+Crafting Stories Through Cinematic Visuals
+
+Subheading:
+Professional film production, commercials, music videos & motion graphics.
+
+CTAs:
+
+View Portfolio
+
+Work With Us
+
+Sections:
+
+Services overview
+
+Production philosophy
+
+Visual storytelling emphasis
+
+2. ABOUT
+Include:
+
+Company story
+
+Mission, vision, and values
+
+Focus on storytelling, creativity, and professionalism
+
+Commitment to high-quality production
+
+Tone:
+
+Confident
+
+Creative
+
+Industry-aware
+
+3. SERVICES
+Service sections:
+
+Movies & Series
+
+Commercials
+
+Music Videos
+
+Motion Graphics
+
+Each service should include:
+
+Short cinematic description
+
+Use-case examples
+
+CTA: Discuss Your Project
+
+4. PORTFOLIO
+Critical page.
+
+Features:
+
+Video embeds (Vimeo / YouTube preferred)
+
+Cinematic image grid
+
+Lightbox viewing
+
+Filter by category (Film, Commercials, Music Videos)
+
+Smooth transitions
+
+No clutter.
+Let visuals speak.
+
+5. CONTACT
+Minimal and professional.
+
+Include:
+
+Contact form (Name, Email, Project Type, Message)
+
+Phone numbers
+
+Email address
+
+No physical address shown
+
+CTA:
+Start a Project
+
+IMAGES & MEDIA
+Client-supplied images and videos
+
+Supplement with high-end cinematic stock if needed
+
+Diverse crews and talent
+
+Warm lighting, film grain feel
+
+WebP format for images
+
+Lazy loading enabled
+
+SEO & PERFORMANCE (HIGH-GRADE)
+SEO
+Optimised titles and meta descriptions
+
+Keywords:
+
+Film production company South Africa
+
+Cinematography services
+
+Music video production
+
+Motion graphics studio
+
+Clean URLs
+
+Internal linking
+
+Schema
+Organization
+
+CreativeWork
+
+VideoObject
+
+Website
+
+TECHNICAL REQUIREMENTS
+Ultra-fast load times (<1.5s)
+
+Mobile-first responsive design
+
+CMS-based (easy updates)
+
+HTTPS + SSL
+
+Video-optimised performance
+
+Domain registration + email setup
+
+LEAD GENERATION FEATURES
+Clear CTAs
+
+Contact form routing to info@delightfilms.co.za
+
+Click-to-call on mobile
+
+No pricing displayed
+
+EXCLUSIONS
+No pop-ups
+
+No e-commerce
+
+No logins
+
+No ads
+
+No cluttered UI
+
+FINAL DELIVERABLES
+Cinematic, high-end website
+
+Portfolio-driven layout
+
+Strong storytelling narrative
+
+SEO-ready structure
+
+Domain registered and live
+
+Professional email configured
+
+SUCCESS STANDARD
+The website must:
+
+Feel like a real film production company
+
+Impress creatives and corporate clients
+
+Showcase visual quality immediately
+
+Convert visitors into serious project enquiries
