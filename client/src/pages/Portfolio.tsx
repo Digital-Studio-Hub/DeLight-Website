@@ -17,6 +17,10 @@ import image10 from "@assets/WhatsApp_Image_2026-01-29_at_12.55.42_1770195655081
 import image11 from "@assets/WhatsApp_Image_2026-01-29_at_12.55.43_1770195662994.jpeg";
 import image12 from "@assets/WhatsApp_Image_2026-01-29_at_12.56.43_(1)_1770195671059.jpeg";
 import image13 from "@assets/WhatsApp_Image_2026-01-29_at_12.56.43_1770195680424.jpeg";
+import image14 from "@assets/WhatsApp_Image_2026-02-05_at_16.05.25_1770721048968.jpeg";
+import image15 from "@assets/WhatsApp_Image_2026-02-05_at_16.09.05_1770721062760.jpeg";
+import image16 from "@assets/WhatsApp_Image_2026-02-05_at_17.29.17_(1)_1770721062760.jpeg";
+import image17 from "@assets/WhatsApp_Image_2026-02-05_at_17.29.17_1770721062761.jpeg";
 
 type Category = "all" | "production" | "behind-scenes" | "equipment";
 
@@ -40,6 +44,10 @@ const galleryImages: GalleryImage[] = [
   { src: image11, alt: "Portrait photography", category: "behind-scenes" },
   { src: image12, alt: "Equipment setup outdoor", category: "equipment" },
   { src: image13, alt: "Team meeting", category: "behind-scenes" },
+  { src: image14, alt: "Sound and camera crew on set", category: "behind-scenes" },
+  { src: image15, alt: "Actors on location", category: "production" },
+  { src: image16, alt: "Production crew with equipment", category: "behind-scenes" },
+  { src: image17, alt: "Golden Blood clapperboard", category: "production" },
 ];
 
 const categories = [

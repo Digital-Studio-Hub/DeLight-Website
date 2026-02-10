@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Target, Eye, Heart, Award } from "lucide-react";
 
-import teamImage from "@assets/WhatsApp_Image_2026-01-29_at_12.56.43_1770195680424.jpeg";
-import behindScenesImage from "@assets/WhatsApp_Image_2026-01-29_at_12.44.08_(3)_1770195565153.jpeg";
+import teamImage from "@assets/WhatsApp_Image_2026-02-05_at_17.29.17_(1)_1770721062760.jpeg";
+import behindScenesImage from "@assets/WhatsApp_Image_2026-02-05_at_16.05.25_1770721048968.jpeg";
 import productionImage from "@assets/WhatsApp_Image_2026-01-29_at_12.56.43_(1)_1770195671059.jpeg";
 
 const values = [

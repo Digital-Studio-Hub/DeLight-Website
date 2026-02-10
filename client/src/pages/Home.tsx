@@ -5,8 +5,8 @@ import { ArrowRight, Film, Tv, Music, Sparkles } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 import cameraImage from "@assets/WhatsApp_Image_2026-01-29_at_12.55.40_(1)_1770195619191.jpeg";
-import crewImage from "@assets/WhatsApp_Image_2026-01-29_at_12.55.42_(1)_1770195640759.jpeg";
-import productionImage from "@assets/WhatsApp_Image_2026-01-29_at_12.44.07_(4)_1770195541763.jpeg";
+import crewImage from "@assets/WhatsApp_Image_2026-02-05_at_16.09.05_1770721062760.jpeg";
+import productionImage from "@assets/WhatsApp_Image_2026-02-05_at_17.29.17_1770721062761.jpeg";
 
 const services = [
   {
