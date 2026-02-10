@@ -35,7 +35,6 @@ const galleryImages: GalleryImage[] = [
   { src: image2, alt: "Behind the scenes filming", category: "behind-scenes" },
   { src: image3, alt: "Professional camera work", category: "equipment" },
   { src: image4, alt: "Production on set", category: "production" },
-  { src: image5, alt: "Interior filming setup", category: "behind-scenes" },
   { src: image6, alt: "Film crew at work", category: "production" },
   { src: image7, alt: "Professional camera at sunset", category: "equipment" },
   { src: image8, alt: "Studio lighting setup", category: "equipment" },
