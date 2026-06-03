@@ -1,43 +1,9 @@
 import type { Express } from "express";
-import { createServer, type Server } from "http";
+import { type Server } from "http";
 import { contactFormSchema } from "@shared/schema";
+import { sendEmail } from "./email";
 
-const ZEPTOMAIL_TOKEN = process.env.ZEPTOMAIL_TOKEN;
 const ADMIN_EMAIL = "info@delightfilms.co.za";
-
-async function sendEmail(to: string, subject: string, htmlBody: string) {
-  const response = await fetch("https://api.zeptomail.com/v1.1/email", {
-    method: "POST",
-    headers: {
-      "Accept": "application/json",
-      "Content-Type": "application/json",
-      "Authorization": ZEPTOMAIL_TOKEN || "",
-    },
-    body: JSON.stringify({
-      from: {
-        address: "noreply@delightfilms.co.za",
-        name: "DeLight Films",
-      },
-      to: [
-        {
-          email_address: {
-            address: to,
-            name: to.split("@")[0],
-          },
-        },
-      ],
-      subject,
-      htmlbody: htmlBody,
-    }),
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`ZeptoMail error: ${response.status} - ${errorText}`);
-  }
-
-  return response.json();
-}
 
 export async function registerRoutes(
   httpServer: Server,
@@ -153,8 +119,8 @@ export async function registerRoutes(
         </html>
       `;
 
-      if (!ZEPTOMAIL_TOKEN) {
-        console.error("ZEPTOMAIL_TOKEN is not configured");
+      if (!process.env.INBOUND_API_KEY) {
+        console.error("INBOUND_API_KEY is not configured");
         return res.status(503).json({
           success: false,
           message: "Email service is not configured. Please contact us directly by phone.",
@@ -162,17 +128,24 @@ export async function registerRoutes(
       }
 
       try {
-        await sendEmail(
+        const adminSent = await sendEmail(
           ADMIN_EMAIL,
           `New Project Inquiry from ${name}`,
           adminEmailHtml
         );
 
-        await sendEmail(
+        const userSent = await sendEmail(
           email,
           "Thank you for contacting DeLight Films",
           userEmailHtml
         );
+
+        if (!adminSent || !userSent) {
+          return res.status(503).json({
+            success: false,
+            message: "Email service is not configured. Please contact us directly by phone.",
+          });
+        }
 
         return res.json({
           success: true,

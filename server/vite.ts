@@ -1,22 +1,53 @@
 import { type Express } from "express";
-import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
-import viteConfig from "../vite.config";
 import fs from "fs";
 import path from "path";
 import { nanoid } from "nanoid";
 
-const viteLogger = createLogger();
-
 export async function setupVite(server: Server, app: Express) {
+  const viteModule = await import("vite");
+  const reactModule = await import("@vitejs/plugin-react");
+  const runtimeErrorOverlayModule = await import(
+    "@replit/vite-plugin-runtime-error-modal"
+  );
+
+  const plugins = [reactModule.default(), runtimeErrorOverlayModule.default()];
+
+  if (process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined) {
+    const cartographerModule = await import("@replit/vite-plugin-cartographer");
+    const devBannerModule = await import("@replit/vite-plugin-dev-banner");
+    plugins.push(cartographerModule.cartographer(), devBannerModule.devBanner());
+  }
+
+  const viteLogger = viteModule.createLogger();
+
   const serverOptions = {
     middlewareMode: true,
     hmr: { server, path: "/vite-hmr" },
     allowedHosts: true as const,
   };
 
-  const vite = await createViteServer({
-    ...viteConfig,
+  const vite = await viteModule.createServer({
+    plugins,
+    resolve: {
+      alias: {
+        "@": path.resolve(import.meta.dirname, "..", "client", "src"),
+        "@shared": path.resolve(import.meta.dirname, "..", "shared"),
+        "@assets": path.resolve(import.meta.dirname, "..", "attached_assets"),
+      },
+    },
+    root: path.resolve(import.meta.dirname, "..", "client"),
+    build: {
+      outDir: path.resolve(import.meta.dirname, "..", "dist", "public"),
+      emptyOutDir: true,
+    },
+    server: {
+      fs: {
+        strict: true,
+        deny: ["**/.*"],
+      },
+      ...serverOptions,
+    },
     configFile: false,
     customLogger: {
       ...viteLogger,
@@ -25,7 +56,6 @@ export async function setupVite(server: Server, app: Express) {
         process.exit(1);
       },
     },
-    server: serverOptions,
     appType: "custom",
   });
 
