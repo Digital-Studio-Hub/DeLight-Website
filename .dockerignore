@@ -1,10 +1,7 @@
 node_modules
-npm-debug.log
-.git
-.gitignore
 dist
-.dockerignore
-replit.md
-*.local
+.git
+.local
+.replit
 .env
-.env.*
+*.log
